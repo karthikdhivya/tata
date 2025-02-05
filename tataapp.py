@@ -18,3 +18,13 @@ data=load_data(ticker,start_date,end_date)
 
 st.subheader('Raw data')
 st.write(data)
+
+
+st.subheader("Download Data as CSV")
+csv = data.to_csv().encode('utf-8')
+st.download_button(
+    label="Download CSV",
+    data=csv,
+    file_name=f"{ticker}_stock_data.csv",
+    mime="text/csv",
+)

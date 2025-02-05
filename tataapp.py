@@ -25,6 +25,6 @@ csv = data.to_csv().encode('utf-8')
 st.download_button(
     label="Download CSV",
     data=csv,
-    file_name="tata_power_stock_data.csv",
+    file_name="Tata_power_stock_data.csv",
     mime="text/csv",
 )

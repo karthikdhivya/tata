@@ -2,7 +2,7 @@ import yfinance as yf
 import pandas as pd
 
 import streamlit as st
-st.title('TataPower')
+st.title('TataPowerStock')
 
 ticker=st.sidebar.text_input("Enter Stock Ticker","TATAPOWER.NS")
 start_date=st.sidebar.text_input("Start Date","2020-01-01")
